@@ -8,16 +8,16 @@
 * React used in frontend and Node.js in backend.
 * react-hot-toast used for notification.
 * uuid library for generating random long string for using as Room ID.
+* main code Editor is done using Monaco Editor and used postMessage API to make it collaborative
+* the link in iframe is the code editor. The github link for that is "https://github.com/CyanXshadow/codeEditor".
 
 ## Instructions
 ### Development
 * cd client && npm start (on terminal 1)
 * cd server && npm run server (on terminal 2)
-* Development document: https://docs.google.com/document/d/1gjXxgH9DGwMUQQZSMpqzwCpN3zbNdG8Ua1ElxFBQg5w/edit?usp=sharing
 
 ### Production
 * first add the env variable value to platform used for deployment of client code.
 * use "REACT_APP_WEB_SOCKET_URL" key name and assign server code production url as value.
-* in client, run "npm run build" for test run.
+* in client, run "npm run build/npm run start" for test run.
 * in deployment platform for client code, select the client as "root folder".
-* NOTE: above step is not required in case if manually hosting on server
