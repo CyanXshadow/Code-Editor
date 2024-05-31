@@ -1,0 +1,21 @@
+.appBox{
+    display: flex;
+    flex-direction: column;
+}
+.codeDiv{
+    width: 100%;
+    height: 85vh;
+}
+.outputDiv{
+    height: 50vh;
+    margin-bottom: 20px;
+
+}
+.editor{
+    height: 85%;
+}
+.output{
+    /* height: max-content; */
+}
+.outputBox{
+}

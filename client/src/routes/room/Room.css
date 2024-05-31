@@ -1,0 +1,238 @@
+.room {
+    display: flex;
+    min-height: 100vh;
+    background-color: rgb(10, 10, 34);
+  }
+  
+  .roomSidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    padding: 10px;
+    /* box-sizing: border-box; */
+  }
+  
+  .roomMain {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 70%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    margin-top: -30px;
+  }
+  
+  .roomCodeEditor {
+    flex: 1;
+    width: 100%;
+    height: 60vh;
+
+  }
+
+  .ouputBox{
+    color: white;
+  }
+  h3{
+    color: white;
+  }
+  .languageFieldWrapper {
+    display: flex;
+    padding: 2px 6px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-top: 5px;
+    border-color: rgb(81, 234, 76);
+  }
+  
+  .languageField {
+    padding: 6px 10px;
+    background-color: #ffffff;
+    margin: 5px 5px;
+    outline: none;
+    text-transform: capitalize;
+    border-color: rgb(142, 142, 142);
+    border-radius: 5px;
+  }
+  
+  .timerDisplay{
+    /* position: absolute; */
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+
+  }
+
+  .timer button{
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 5px;
+    text-decoration-color: white;
+  }
+  .cusers{
+    color: rgb(0, 0, 0);
+    font-size: large;
+  }
+
+  .startbutton{
+    background-color: rgb(64, 223, 93);
+    border-radius: 5px;
+    border-color: rgb(64, 223, 93);
+    cursor: pointer;
+  }
+
+  .questionBox {
+    /* display: flex;
+    flex-direction: column; */
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #48d854d2;
+    /* margin-bottom: 20px; */
+    border-radius: 5px;
+    width: 85%;
+    height: 50%;
+  }
+
+  .questionInput{
+    border: none;
+    width: 95%;
+    height: auto;
+    overflow-y: auto;
+    overflow-y: auto;
+  }
+
+  .startbutton:hover{
+    background-color: rgb(255, 255, 255);
+  }
+
+  .stopbutton{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    color: white;
+  }
+
+  .stopbutton:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
+
+  .resetbutton{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgba(74, 74, 74, 0.717);
+    border-color: rgba(74, 74, 74, 0.717);
+    
+  }
+
+  .resetbutton:hover{
+    background-color: rgb(255, 255, 255);
+  }
+
+  .timerdiv{
+    align-self: center;
+  }
+  
+  
+  .roomSidebarBtn {
+    position: absolute;
+    bottom: 0;
+    font-size: 75%;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.45s ease-in-out 0.05s;
+    width: 25%;
+    align-self: center;
+    margin-bottom: 10px;
+    overflow-y: auto;
+  }
+  .roomSidebarCopyBtn{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 60px;
+    font-size: 75%;
+    font-weight: bold;
+    padding: 8px 15px;
+    color: white;
+    background-color: #42d358ee;
+    border: 1px solid #42d358ee;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.45s ease-in-out 0.05s;
+    width: 25%;
+    align-self: center;
+  }
+  
+  .roomSidebarCopyBtn:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(76, 198, 98);
+  }
+  
+  .roomSidebarBtn:hover {
+    color: white;
+    background-color: black;
+  }
+  
+  .roomSidebarUsersWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .roomSidebarUsers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .roomSidebarUsersEach {
+    display: grid;
+    justify-items: center;
+  }
+  
+  .roomSidebarUsersEachAvatar {
+    color: white;
+    border-radius: 5px;
+    min-width: 30px;
+    min-height: 30px;
+    padding: 5px;
+    font-size: small;
+    display: grid;
+    place-items: center;
+  }
+  
+  .roomSidebarUsersEachName {
+    font-weight: bold;
+    font-size: small;
+    color: rgb(0, 0, 0);
+  }
+
+  .runBtn{
+    width:50px;
+    background-color: rgb(62, 218, 81);
+    color: white;
+    border-color: rgb(95, 218, 79);
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .btnDiv{
+    padding-top: 10px;
+  }
+  .runBtn:hover{
+    background-color: white;
+    color: rgb(64, 226, 112);
+    font-weight: bolder;
+  }
+  
